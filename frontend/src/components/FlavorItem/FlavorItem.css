@@ -1,34 +1,39 @@
-label {
-  color: #eee;
-  text-align: center;
+.flavoritem {
+  width: 100%;
+  margin: 3rem 0;
+  background-color: #000;
+  display: grid;
+  height: 100%;
 }
 
-form {
+.flavoritem-container {
+  width: 100%;
+  margin: 3rem 0;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-flavor .linkDiv{
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  margin: auto;
-  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.flavoritem-container .img {
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
 }
 
-form label {
-  margin-bottom: .5rem;
+.linkDiv:hover {
+  background: rgba(255,255,255, .2);
 }
 
-input {
-  border-radius: 20px;
-}
-
-.btn {
-  border-radius: 20px;
-}
-
-form input, textarea {
-  margin-bottom: 1rem;
-  padding: 10px 18px;
-  font-size: 1.2rem;
-  font-family: 'Outfit', sans-serif;
-  background: rgba(255,255,255,.1);
-  border-color: rgba(255,255,255,.1);
-  color: #f4f4f4;
+.linkDiv .linkto {
+  font-size: 2rem;
+  font-weight: 700;
 }

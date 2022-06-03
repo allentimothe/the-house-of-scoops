@@ -1,0 +1,45 @@
+.flavor {
+  width: 100%;
+  margin: 3rem 0;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+
+.flavor-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  border-radius: 20px;
+  margin-left: 8rem;
+}
+
+
+.flavor-container p{
+  display: grid;
+
+
+}
+
+.flavor-container .img{
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.flavor-description {
+  font-size: 3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-right: 8rem;
+}
+
+@media screen and (max-width: 980px) {
+  .card-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

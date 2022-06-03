@@ -4,15 +4,15 @@ import FlavorItem from '../../components/FlavorItem/FlavorItem'
 import Hero from '../../components/Hero/Hero'
 import Navbar from '../../components/Navbar/Navbar'
 
-const Punch = () => {
+const Flavors = () => {
   return (
     <div>
       <Navbar />
-      <Hero heading='FLAVORS' text='Take a look at our selection of amazing flavors!'/>
+      <Hero heading='FLAVORS' text='Our Ice Cream is made In-House, daily. We use only the best ingredients from selected suppliers. Quality and Freshness is our recipe.'/>
       <FlavorItem />
       <Footer />
     </div>
   )
 }
 
-export default Punch
+export default Flavors

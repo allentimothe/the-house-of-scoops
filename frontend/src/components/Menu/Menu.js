@@ -1,54 +1,57 @@
-import React, { useState } from 'react';
-import './Clock.css';
-import { Link } from 'react-router-dom';
+import Scoop from '../../assets/saher-suthriwala-xs32jGtAOv4-unsplash.jpg'
+import Waffle from '../../assets/slashio-photography-uMYxldWYSZk-unsplash.jpg'
+import './Menu.css';
 
-const Clock = () => {
-  const day = new Date().getDay();
-  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
-  const dayOfWeek = daysOfWeek[day];
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-  const date = `${new Date().getMonth()+1}/${new Date().getDate()}/${new Date().getFullYear()}`;
-      const [currentDate, setCurrentDate] = useState(date);
-      const UpdatedDates = () => {
-        let dates = `${new Date().getMonth()+1}/${new Date().getDate()}/${new Date().getFullYear()}`;
-        setCurrentDate(dates);
-      }
-      setInterval(UpdatedDates, 50000);
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- const time = new Date().toLocaleTimeString();
-    const [currentTime, setCurrentTime] = useState(time);
-    const UpdatedTimes = () => {
-      let times = new Date().toLocaleTimeString();
-      setCurrentTime(times);
-    }
-
-    setInterval(UpdatedTimes, 1000);
+const Menu = () => {
+  
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
   return (
-    <div className='clock'>
-        <div className='date'>
-          <h2>{dayOfWeek}</h2>
-          <h1>{currentDate}</h1>
+    <div className='menu'>
+      <div className='menu1-container'>
+        <br />
+        <h1 className='title'>Scoops</h1>
+        <div className='scoops'>
+          <br />
+          <br />
+          <p>Single&nbsp; ......................................&nbsp; → &nbsp;$4.75</p>
+          <p>Double&nbsp; ....................................&nbsp; → &nbsp;$7.00</p>
+          <p>Split&nbsp; ......................................... &nbsp;→ &nbsp;$5.25</p>
+          <p>Flight&nbsp; ......................................&nbsp; &nbsp;→&nbsp; $6.00</p>
+          <br />
+          <br />
         </div>
-      <div className='clock-container'>
-        <div className='time'>
-          <p>{currentTime}</p>
+        <div className='img1-container'>
+          <div className='image-scoop'>
+            <img src={Scoop} className='img' alt='' />
+          </div>
         </div>
+        <br />
       </div>
-        {/* <div className='btn-container'> 
-          <div className='btn1'>
-            <Link to='/task' className='btn'>Task</Link>
+      <div className='menu2-container'>
+      <br />
+        <h1 className='waffle-title'>Waffle Cones, Affogato's & Pints</h1>
+        <div className='waffle'>
+          <br />
+          <p>Regualr Waffle Cone&nbsp;........................... &nbsp;&nbsp;→&nbsp; $1.25</p>
+          <p>Speciality Waffle Cone&nbsp; ........................&nbsp; →&nbsp; $2.50</p>
+          <p>Affogato&nbsp; ............................................&nbsp;&nbsp; → &nbsp;$6.00</p>
+          <p>Pints &nbsp;..................................................&nbsp;&nbsp; → &nbsp;$11.00</p>
+          <p>Waffle Sandwich &nbsp;................................&nbsp;&nbsp; →&nbsp; $6.00</p>
+          <p>Milk Shake&nbsp; .........................................&nbsp;&nbsp; → &nbsp;$8.50</p>
+          <br />
+        </div>
+        <div className='img2-container'>
+          <div className='image-waffle'>
+            <img src={Waffle} className='img' alt='' />
           </div>
-          <div className='btn2'>
-            <Link to='/punch' className='btn'>Punch</Link>
-          </div>
-        </div> */}
-    
+        </div>
+        <br />
+      </div>
     </div>
 
-)
+   )
 }
 
-export default Clock;
+export default Menu;

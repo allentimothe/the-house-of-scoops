@@ -15,7 +15,9 @@ form {
   margin: auto;
   max-width: 600px;
 }
-
+form p{
+  margin-bottom: 2rem;
+}
 form label {
   margin-bottom: .5rem;
 }

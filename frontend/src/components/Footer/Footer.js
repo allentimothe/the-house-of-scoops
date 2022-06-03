@@ -12,7 +12,6 @@ const Footer = () => {
           <div>
             <p> 
                 1365 East Gladstone Street #200
-                Glendora, CA 91740
             </p>
             <h4>Glendora, CA 91740</h4>
           </div>
