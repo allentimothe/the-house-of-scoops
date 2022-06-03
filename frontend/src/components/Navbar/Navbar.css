@@ -21,6 +21,33 @@
 
 .nav-menu li{
   padding: 0 1rem;
+  display: inline-block;
+  position: relative;
+  color: #f3f3f3;
+}
+
+.nav-menu li:hover {
+  display: inline-block;
+  position: relative;
+  color: #f3f3f3;
+}
+
+.nav-menu li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-menu li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-menu a {
